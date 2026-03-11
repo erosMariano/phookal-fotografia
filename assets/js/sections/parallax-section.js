@@ -14,7 +14,7 @@ export function initParallaxSection() {
     maxWidth: "100%",
     ease: "none",
     scrollTrigger: {
-      trigger: ".depoimentos",
+      trigger: ".parallax-section",
       start: "top +=50%",
       end: "top top",
       scrub: true,
