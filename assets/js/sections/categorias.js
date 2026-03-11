@@ -97,7 +97,7 @@ export function initCategorias() {
 
     gsap.to(card.querySelector("img"), {
       translateY: "0%",
-      duration: 1.5,
+      duration: 2,
       ease: "power3.out",
       delay: imgDelay,
       scrollTrigger: {

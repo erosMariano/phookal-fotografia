@@ -3,7 +3,7 @@
 @use "./home";
 @use "./preserved";
 @use "./categorias";
-
+@use "./_parallax-section";
 @font-face {
   font-family: "Moaro";
   src: url("../fonts/moaro.otf") format("opentype");
@@ -12,17 +12,19 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
-  font-family: "Mastha";
-  src: url("../fonts/Mastha-1jJwe.otf") format("opentype");
+  font-family: "Montserrat Alternates";
+  src: url("../fonts/MontserratAlternates-Regular.ttf") format("opentype");
 
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
-  font-family: "Montserrat Alternates";
-  src: url("../fonts/MontserratAlternates-Regular.ttf") format("opentype");
+  font-family: "BerlingskeSerif";
+  src: url("../fonts/BerlingskeSerif-Lt.woff") format("woff");
 
   font-weight: normal;
   font-style: normal;
