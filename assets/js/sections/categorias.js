@@ -92,5 +92,19 @@ export function initCategorias() {
     card.addEventListener("mouseleave", () => {
       hoverTl.reverse();
     });
+
+    const imgDelay = isMobile ? 0 : index * 0.2;
+
+    gsap.to(card.querySelector("img"), {
+      translateY: "0%",
+      duration: 1.5,
+      ease: "power3.out",
+      delay: imgDelay,
+      scrollTrigger: {
+        trigger: card,
+        start: "top 85%",
+        once: true,
+      },
+    });
   });
 }

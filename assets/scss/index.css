@@ -526,6 +526,7 @@ section.preserved {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transform: translateY(-100%);
 }
 @media (max-width: 768px) {
   .categorias {
