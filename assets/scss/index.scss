@@ -1,3 +1,30 @@
 @use "./reset";
 @use "./lenis";
 @use "./home";
+@use "./preserved";
+@use "./categorias";
+
+@font-face {
+  font-family: "Moaro";
+  src: url("../fonts/moaro.otf") format("opentype");
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mastha";
+  src: url("../fonts/Mastha-1jJwe.otf") format("opentype");
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../fonts/MontserratAlternates-Regular.ttf") format("opentype");
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

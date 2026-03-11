@@ -29,22 +29,7 @@ html {
   scrollbar-width: thin;
   scrollbar-color: #8f400d #efebe3;
 }
-@font-face {
-  font-family: "Moaro";
-  src: url("../fonts/moaro.otf") format("opentype");
 
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Mastha";
-  src: url("../fonts/Mastha-1jJwe.otf") format("opentype");
-
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 .loading-screen {
   width: 100vw;
   height: 100vh;
@@ -109,14 +94,3 @@ html {
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
