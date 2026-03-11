@@ -20,6 +20,13 @@
       type="font/otf"
       crossorigin
     />
+    <link
+      rel="preload"
+      href="./assets/fonts/MontserratAlternates-Regular.ttf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
 
     <link rel="stylesheet" href="./assets/scss/index.css" />
   </head>
@@ -50,8 +57,93 @@
       </p>
     </div>
 
-    <script src="https://unpkg.com/lenis@1.3.18/dist/lenis.min.js"></script> 
+    <section class="preserved">
+      <div class="container">
+        <div class="content-left">
+          <h2>Preservando as histórias sem filtros</h2>
+
+          <div>
+            <img src="./assets/img/preserved_3.jpg" data-parallax="slow" />
+            <div>
+              <p>
+                Há 8 anos registramos casamentos e ensaios de casais, essa é a
+                nossa paixão.
+              </p>
+
+              <p>
+                Nossa fotografia une aventura e sensibilidade, inspirada pelo
+                amor à natureza e pelos momentos reais entre duas pessoas. Cada
+                imagem reflete a forma como vemos o mundo: com emoção, leveza e
+                autenticidade.
+              </p>
+              <p>
+                Fotografamos com amor, atenção aos detalhes e o compromisso de
+                transformar momentos em memórias inesquecíveis.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-right">
+          <div>
+            <img
+              src="./assets/img/preserved_2.jpg"
+              alt=""
+              data-parallax="fast"
+            />
+            <p>
+              Cada foto é um pedaço de uma história verdadeira, vivido
+              intensamente e guardado para sempre.
+            </p>
+          </div>
+
+          <img src="./assets/img/preserved_1.jpeg" data-parallax="medium" />
+        </div>
+      </div>
+    </section>
+
+    <section class="categorias">
+      <div class="container">
+        <a href="#">
+          <img src="./assets/img/casamento.jpeg" data-parallax="medium" />
+          <span class="border-card"></span>
+          <div class="content">
+            <h2>Casamentos</h2>
+            <span>Ver mais</span>
+          </div>
+        </a>
+        <a href="#">
+          <img src="./assets/img/pre-weeding.webp" data-parallax="medium" />
+          <span class="border-card"></span>
+          <div class="content">
+            <h2>Pre Wedding</h2>
+            <span>Ver mais</span>
+          </div>
+        </a>
+
+        <a href="#">
+          <img src="./assets/img/ensaios.webp" data-parallax="medium" />
+          <span class="border-card"></span>
+          <div class="content">
+            <h2>Ensaios</h2>
+            <span>Ver mais</span>
+          </div>
+        </a>
+
+        <a href="#">
+          <img src="./assets/img/envelopment.webp" data-parallax="medium" />
+          <span class="border-card"></span>
+          <div class="content">
+            <h2>ELOPEMENT WEDDING</h2>
+            <span>Ver mais</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/lenis@1.3.18/dist/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script type="module" src="./assets/js/script.js"></script>
   </body>
 </html>
