@@ -1,0 +1,234 @@
+.depoimentos {
+  padding-bottom: 80px;
+
+  .container {
+    position: relative;
+    min-height: 800px;
+    padding-top: 120px;
+  }
+
+  .depoimento-slide {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: none;
+    opacity: 0;
+    z-index: 1;
+
+    &.active {
+      display: flex;
+      opacity: 1;
+      z-index: 2;
+    }
+  }
+
+  .content {
+    display: flex;
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: clamp(2rem, 6vw, 68px);
+    text-align: center;
+    max-width: 1122px;
+    margin: 0 auto;
+    font-family: "Moaro", sans-serif;
+    position: relative;
+    z-index: 10;
+    margin-bottom: -100px;
+    color: #2C1810;
+
+  }
+  p {
+    font-size: 36px;
+    font-family: "BerlingskeSerif", sans-serif;
+    margin-top: -48px;
+    position: relative;
+    margin-left: 66px;
+  }
+  .mini-foto {
+    height: 400px;
+    width: 260px;
+    position: relative;
+    top: -100px;
+  }
+
+  .content-mini-fotos {
+    display: grid;
+
+    img {
+      grid-area: 1 / 1;
+      object-fit: cover;
+      clip-path: inset(0% 0% 0% 0%);
+    }
+  }
+
+  .main-foto {
+    height: 670px;
+    width: 500px;
+    object-fit: cover;
+    padding: 0 24px;
+    clip-path: inset(0% 0% 0% 0%);
+  }
+  .content-fotos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-text {
+    font-family: sans-serif;
+    margin-top: 56px;
+    margin-left: 40px;
+
+    span {
+      font-size: 35rem;
+      display: block;
+      height: 158px;
+      font-family: "Moaro", sans-serif;
+      color: #6B3A2A;
+
+    }
+  }
+
+  h3 {
+    font-family: "BerlingskeSerif", sans-serif;
+    font-size: clamp(2rem, 5vw, 5rem);
+    text-align: center;
+    left: -125px;
+    top: -30px;
+    position: relative;
+    width: max-content;
+        color: #8F400D;
+
+    span {
+      font-size: clamp(2.5rem, 6vw, 6.25rem);
+      font-family: "Moaro", sans-serif;
+      color: #2C1810;
+    }
+  }
+
+  .content-buttons {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    display: flex;
+    gap: 16px;
+
+    button {
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-family: "Moaro", sans-serif;
+      background: #6B3A2A;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+
+      &:hover {
+        background: #8F400D;
+        border-color: rgba(255, 255, 255, 0.5);
+        transform: translateY(-2px);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  // Responsive: Tablet
+  @media (max-width: 1024px) {
+    .content {
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .main-foto {
+      height: 550px;
+      width: 400px;
+    }
+
+    .mini-foto {
+      height: 350px;
+      width: 220px;
+    }
+    h3{
+      left: 0;
+      top: 0;
+    }
+  }
+
+  // Responsive: Mobile
+  @media (max-width: 768px) {
+    .container {
+      padding: 80px 16px 60px;
+    }
+
+    .depoimento-slide{
+      top: 0;
+    }
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    .content {
+      gap: 16px;
+    }
+
+    .content-fotos {
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+    }
+
+    .mini-foto {
+      height: 400px;
+      width: 100%;
+      top: 0;
+    }
+
+    .main-foto {
+      display: none;
+    }
+
+    .content-text {
+      text-align: center;
+      margin: 0 auto;
+      span {
+        font-size: 5rem;
+        height: 0px;
+        height: auto;
+        position: unset;
+      }
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 0;
+      margin-left: 0;
+        font-size: 24px;
+    }
+
+    h3 {
+      margin: 16px auto 0 auto;
+    }
+
+    .content-buttons {
+      margin-top: 0px;
+      position: relative;
+      bottom: 0;
+      right: 0;
+      justify-content: center;
+      align-items: center;
+      button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

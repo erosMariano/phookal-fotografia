@@ -1,0 +1,46 @@
+.contato{
+    .content{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .main-image{
+        grid-column: -10 / -1;
+        height: 400px;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    
+    .content-texts{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        h2{
+            font-family: "Moaro", sans-serif;
+            grid-column: 1 / span 8;
+
+            display: flex;
+            font-size: 6rem;
+            top: -32px;
+            position: relative;
+            text-align: left;
+            img{
+                width: 200px;
+            }
+        }
+        justify-content: space-between;
+        text-align: center;
+        margin: 0 auto;
+
+        p{
+            grid-column: 11 / -1;
+            text-align: right;
+        }
+        span{
+            font-size: 5rem;
+            height: 0px;
+        }
+    }
+}

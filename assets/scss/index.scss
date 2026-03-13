@@ -4,6 +4,9 @@
 @use "./preserved";
 @use "./categorias";
 @use "./_parallax-section";
+@use "./_depoimentos";
+@use "./_contato";
+
 @font-face {
   font-family: "Moaro";
   src: url("../fonts/moaro.otf") format("opentype");

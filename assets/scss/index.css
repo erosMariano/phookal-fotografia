@@ -550,8 +550,12 @@ section.preserved {
 .parallax-section p {
   max-width: 700px;
   margin: 0 auto;
-  padding: 48px 24px;
-  font: 300 2.1875rem/1.15 "BerlingskeSerif", serif;
+  padding: clamp(24px, 5vw, 48px) 24px;
+  color: #8F400D;
+  font-weight: 300;
+  font-size: clamp(1.25rem, 3vw, 2.1875rem);
+  font-family: "BerlingskeSerif", serif;
+  line-height: 1.15;
 }
 .parallax-section .parallax {
   position: relative;
@@ -580,12 +584,287 @@ section.preserved {
   z-index: 1;
   background-color: #efebe3;
 }
+@media (max-width: 1024px) {
+  .parallax-section .content {
+    max-width: 70%;
+    padding: 16px;
+  }
+  .parallax-section .parallax {
+    height: 120vh;
+  }
+}
+@media (max-width: 768px) {
+  .parallax-section p {
+    padding: 24px 16px;
+  }
+  .parallax-section .parallax {
+    height: 100vh;
+  }
+  .parallax-section .content {
+    max-width: 85%;
+    padding: 12px;
+    top: 25%;
+  }
+  .parallax-section .parallax-img {
+    height: 100%;
+    top: -28%;
+  }
+}
+@media (max-width: 480px) {
+  .parallax-section .content {
+    max-width: 90%;
+    padding: 8px;
+  }
+}
 
-.teste {
-  width: 100%;
-  background-color: #f5f5f5;
+.depoimentos {
+  padding-bottom: 80px;
+}
+.depoimentos .container {
   position: relative;
-  height: 100vh;
+  min-height: 800px;
+  padding-top: 120px;
+}
+.depoimentos .depoimento-slide {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: none;
+  opacity: 0;
+  z-index: 1;
+}
+.depoimentos .depoimento-slide.active {
+  display: flex;
+  opacity: 1;
+  z-index: 2;
+}
+.depoimentos .content {
+  display: flex;
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.depoimentos h2 {
+  font-size: clamp(2rem, 6vw, 68px);
+  text-align: center;
+  max-width: 1122px;
+  margin: 0 auto;
+  font-family: "Moaro", sans-serif;
+  position: relative;
+  z-index: 10;
+  margin-bottom: -100px;
+  color: #2C1810;
+}
+.depoimentos p {
+  font-size: 36px;
+  font-family: "BerlingskeSerif", sans-serif;
+  margin-top: -48px;
+  position: relative;
+  margin-left: 66px;
+}
+.depoimentos .mini-foto {
+  height: 400px;
+  width: 260px;
+  position: relative;
+  top: -100px;
+}
+.depoimentos .content-mini-fotos {
+  display: grid;
+}
+.depoimentos .content-mini-fotos img {
+  grid-area: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  clip-path: inset(0% 0% 0% 0%);
+}
+.depoimentos .main-foto {
+  height: 670px;
+  width: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0 24px;
+  clip-path: inset(0% 0% 0% 0%);
+}
+.depoimentos .content-fotos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.depoimentos .content-text {
+  font-family: sans-serif;
+  margin-top: 56px;
+  margin-left: 40px;
+}
+.depoimentos .content-text span {
+  font-size: 35rem;
+  display: block;
+  height: 158px;
+  font-family: "Moaro", sans-serif;
+  color: #6B3A2A;
+}
+.depoimentos h3 {
+  font-family: "BerlingskeSerif", sans-serif;
+  font-size: clamp(2rem, 5vw, 5rem);
+  text-align: center;
+  left: -125px;
+  top: -30px;
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  color: #8F400D;
+}
+.depoimentos h3 span {
+  font-size: clamp(2.5rem, 6vw, 6.25rem);
+  font-family: "Moaro", sans-serif;
+  color: #2C1810;
+}
+.depoimentos .content-buttons {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  gap: 16px;
+}
+.depoimentos .content-buttons button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-family: "Moaro", sans-serif;
+  background: #6B3A2A;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+.depoimentos .content-buttons button:hover {
+  background: #8F400D;
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+.depoimentos .content-buttons button:active {
+  transform: translateY(0);
+}
+@media (max-width: 1024px) {
+  .depoimentos .content {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .depoimentos .main-foto {
+    height: 550px;
+    width: 400px;
+  }
+  .depoimentos .mini-foto {
+    height: 350px;
+    width: 220px;
+  }
+  .depoimentos h3 {
+    left: 0;
+    top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .depoimentos .container {
+    padding: 80px 16px 60px;
+  }
+  .depoimentos .depoimento-slide {
+    top: 0;
+  }
+  .depoimentos h2 {
+    margin-bottom: 40px;
+  }
+  .depoimentos .content {
+    gap: 16px;
+  }
+  .depoimentos .content-fotos {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+  .depoimentos .mini-foto {
+    height: 400px;
+    width: 100%;
+    top: 0;
+  }
+  .depoimentos .main-foto {
+    display: none;
+  }
+  .depoimentos .content-text {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .depoimentos .content-text span {
+    font-size: 5rem;
+    height: 0px;
+    height: auto;
+    position: unset;
+  }
+  .depoimentos p {
+    text-align: center;
+    margin-bottom: 0;
+    margin-left: 0;
+    font-size: 24px;
+  }
+  .depoimentos h3 {
+    margin: 16px auto 0 auto;
+  }
+  .depoimentos .content-buttons {
+    margin-top: 0px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .depoimentos .content-buttons button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+.contato .content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.contato .main-image {
+  grid-column: -10/-1;
+  height: 400px;
+}
+.contato .main-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.contato .content-texts {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.contato .content-texts h2 {
+  font-family: "Moaro", sans-serif;
+  grid-column: 1/span 8;
+  display: flex;
+  font-size: 6rem;
+  top: -32px;
+  position: relative;
+  text-align: left;
+}
+.contato .content-texts h2 img {
+  width: 200px;
+}
+.contato .content-texts {
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 auto;
+}
+.contato .content-texts p {
+  grid-column: 11/-1;
+  text-align: right;
+}
+.contato .content-texts span {
+  font-size: 5rem;
+  height: 0px;
 }
 
 @font-face {

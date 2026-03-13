@@ -2,6 +2,7 @@ import { initPreserved } from "./sections/preserved.js";
 import { initHero } from "./sections/hero.js";
 import { initCategorias } from "./sections/categorias.js";
 import { initParallaxSection } from "./sections/parallax-section.js";
+import { initDepoiments } from "./sections/depoimentos.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   const lenis = new Lenis({
@@ -25,4 +26,5 @@ document.addEventListener("DOMContentLoaded", function () {
   initPreserved();
   initCategorias();
   initParallaxSection();
+  initDepoiments();
 });
