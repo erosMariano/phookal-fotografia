@@ -11,6 +11,12 @@ export function initFooter() {
   const logo = footer.querySelector(".container > img");
   const reservedItems = gsap.utils.toArray(".reserved p", footer);
 
+  if (heading) gsap.set(heading, { y: 36, opacity: 0 });
+  if (email) gsap.set(email, { y: 18, opacity: 0 });
+  if (columns.length) gsap.set(columns, { y: 28, opacity: 0 });
+  if (logo) gsap.set(logo, { clipPath: "inset(0% 100% 0% 0%)" });
+  if (reservedItems.length) gsap.set(reservedItems, { y: 14, opacity: 0 });
+
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: footer,
@@ -20,11 +26,11 @@ export function initFooter() {
   });
 
   if (heading) {
-    tl.from(
+    tl.to(
       heading,
       {
-        y: 36,
-        opacity: 0,
+        y: 0,
+        opacity: 1,
         duration: 0.9,
         ease: "power3.out",
       },
@@ -33,11 +39,11 @@ export function initFooter() {
   }
 
   if (email) {
-    tl.from(
+    tl.to(
       email,
       {
-        y: 18,
-        opacity: 0,
+        y: 0,
+        opacity: 1,
         duration: 0.8,
         ease: "power3.out",
       },
@@ -46,11 +52,11 @@ export function initFooter() {
   }
 
   if (columns.length) {
-    tl.from(
+    tl.to(
       columns,
       {
-        y: 28,
-        opacity: 0,
+        y: 0,
+        opacity: 1,
         duration: 0.9,
         ease: "power3.out",
         stagger: 0.14,
@@ -60,10 +66,10 @@ export function initFooter() {
   }
 
   if (logo) {
-    tl.from(
+    tl.to(
       logo,
       {
-        clipPath: "inset(0% 100% 0% 0%)",
+        clipPath: "inset(0% 0% 0% 0%)",
         duration: 2,
         ease: "expo.out",
       },
@@ -72,11 +78,11 @@ export function initFooter() {
   }
 
   if (reservedItems.length) {
-    tl.from(
+    tl.to(
       reservedItems,
       {
-        y: 14,
-        opacity: 0,
+        y: 0,
+        opacity: 1,
         duration: 0.6,
         ease: "power2.out",
         stagger: 0.1,

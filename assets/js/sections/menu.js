@@ -41,6 +41,7 @@ export function initMenu() {
     item.addEventListener("touchstart", () => setImages(+item.dataset.index), {
       passive: true,
     });
+    item.addEventListener("click", close);
   });
 
   document.addEventListener("keydown", (e) => {

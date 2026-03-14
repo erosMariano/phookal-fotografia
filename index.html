@@ -58,19 +58,19 @@
             <img
               class="side-img active"
               id="left-0"
-              src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=440&q=80"
+              src="./assets/img/trabalho_1.webp"
               alt=""
             />
             <img
               class="side-img"
               id="left-1"
-              src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=440&q=80"
+              src="./assets/img/sobre_nos_1.webp"
               alt=""
             />
             <img
               class="side-img"
               id="left-2"
-              src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=440&q=80"
+              src="./assets/img/contato_1.jpg"
               alt=""
             />
           </div>
@@ -79,19 +79,19 @@
             <img
               class="side-img active"
               id="right-0"
-              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=440&q=80"
+              src="./assets/img/trabalhos_2.webp"
               alt=""
             />
             <img
               class="side-img"
               id="right-1"
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=440&q=80"
+              src="./assets/img/sobre_nos_2.webp"
               alt=""
             />
             <img
               class="side-img"
               id="right-2"
-              src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=440&q=80"
+              src="./assets/img/contato_2.jpg"
               alt=""
             />
           </div>
@@ -99,14 +99,14 @@
           <div class="panel-line"></div>
 
           <nav class="nav-items">
-            <a class="nav-item" data-index="0" href="#"
-              ><span class="idx">01</span>Portfolio</a
+            <a class="nav-item" data-index="0" href="#categorias"
+              ><span class="idx">01</span>Trabalhos</a
             >
-            <a class="nav-item" data-index="1" href="#"
-              ><span class="idx">02</span>About</a
+            <a class="nav-item" data-index="1" href="#parallax-section"
+              ><span class="idx">02</span>Sobre Nós</a
             >
-            <a class="nav-item" data-index="2" href="#"
-              ><span class="idx">03</span>Contact</a
+            <a class="nav-item" data-index="2" href="#footer"
+              ><span class="idx">03</span>Contato</a
             >
           </nav>
         </div>
@@ -172,7 +172,7 @@
       </div>
     </section>
 
-    <section class="categorias">
+    <section class="categorias" id="categorias">
       <div class="container">
         <a href="#">
           <img src="./assets/img/casamento.jpeg" data-parallax="medium" />
@@ -210,7 +210,7 @@
         </a>
       </div>
     </section>
-    <section class="parallax-section">
+    <section class="parallax-section" id="parallax-section">
       <div class="parallax">
         <img class="parallax-img" src="./assets/img/envelopment.webp" alt="" />
       </div>
@@ -307,7 +307,7 @@
                 src="./assets/img/envelopment_1.webp"
                 data-depoimentos="main-2"
               />
-              <h3>Ensaio <br /><span>Pré-Wedding</span></h3>
+              <h3>Intimo <br /><span>Pré-Wedding</span></h3>
             </div>
           </div>
 
@@ -331,26 +331,26 @@
             <div class="content-mini-fotos">
               <img
                 class="mini-foto"
-                src="./assets/img/preserved_1.jpeg"
+                src="./assets/img/envelopment_1.jpg"
                 data-depoimentos="main-3"
               />
 
               <img
                 class="mini-foto"
-                src="./assets/img/preserved_2.jpg"
+                src="./assets/img/envelopment_2.jpg"
                 data-depoimentos="main-3"
               />
 
               <img
                 class="mini-foto"
-                src="./assets/img/preserved_3.jpg"
+                src="./assets/img/envelopment_3.jpg"
                 data-depoimentos="main-3"
               />
             </div>
             <div>
               <img
                 class="main-foto"
-                src="./assets/img/envelopment.webp"
+                src="./assets/img/envelopment_4.jpg"
                 data-depoimentos="main-3"
               />
               <h3>Elopement <br /><span>Wedding</span></h3>
@@ -370,10 +370,58 @@
             <button class="btn-proximo">Próximo</button>
           </div>
         </div>
+
+                <!-- Ensaios -->
+        <div class="content depoimento-slide" data-slide="3">
+          <div class="content-fotos">
+            <div class="content-mini-fotos">
+              <img
+                class="mini-foto"
+                src="./assets/img/ensaios_2.webp"
+                data-depoimentos="main-4"
+              />
+
+              <img
+                class="mini-foto"
+                src="./assets/img/ensaios_3.webp"
+                data-depoimentos="main-4"
+              />
+
+              <img
+                class="mini-foto"
+                src="./assets/img/ensaios_4.webp"
+                data-depoimentos="main-4"
+              />
+            </div>
+            <div>
+              <img
+                class="main-foto"
+                src="./assets/img/ensaios_1.webp"
+                data-depoimentos="main-4"
+              />
+              <h3>Autêntico <br /><span>Ensaio</span></h3>
+            </div>
+          </div>
+
+          <div class="content-text">
+            <span>"</span>
+            <p>
+              Uma aventura mágica na natureza, onde cada instante foi capturado
+              com sensibilidade e cuidado.
+            </p>
+          </div>
+
+          <div class="content-buttons">
+            <button class="btn-anterior">Anterior</button>
+            <button class="btn-proximo">Próximo</button>
+          </div>
+        </div>
+
+
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="content-contato">
           <div>
@@ -387,18 +435,17 @@
             <nav class="footer-link-column">
               <span> MENU </span>
               <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Work</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="">Trabalho</a></li>
+                <li><a href="">Sobre nós</a></li>
+                <li><a href="">Contato</a></li>
               </ul>
             </nav>
 
             <nav class="footer-link-column">
               <span> Social </span>
               <ul>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">Pinterest</a></li>
-                <li><a href="">YouTube</a></li>
+                <li><a href="https://www.instagram.com/phookal_fotografia/">Instagram</a></li>
+                <li><a href="https://br.pinterest.com/phookalfotografia/">Pinterest</a></li>
               </ul>
             </nav>
           </div>
@@ -407,7 +454,7 @@
 
         <div class="reserved">
           <p>EnneCode</p>
-          <p>&copy; 2023 Todos os direitos reservados.</p>
+          <p>&copy; 2026 Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

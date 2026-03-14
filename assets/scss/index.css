@@ -87,9 +87,7 @@ video {
   font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
-}
-
-/* HTML5 display-role reset for older browsers */
+} /* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -131,6 +129,10 @@ table {
   border-spacing: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html.lenis,
 html.lenis body {
   height: auto;
@@ -168,7 +170,7 @@ html.lenis body {
 
 :root {
   --black: #0a0a0a;
-  --accent: #c9a96e;
+  --accent: #8f400d;
   --gray: #888;
 }
 
@@ -226,6 +228,7 @@ html.lenis body {
      -moz-user-select: none;
           user-select: none;
   -webkit-tap-highlight-color: transparent;
+  height: 38px;
 }
 
 .menu-trigger:hover {
@@ -360,7 +363,13 @@ html.lenis body {
   border-radius: 2px;
   translate: -50% -50%;
   z-index: 1;
-  background: #fff;
+  background-color: #fff;
+}
+@media (max-width: 768px) {
+  .close-btn::before,
+  .close-btn::after {
+    background-color: #8f400d;
+  }
 }
 
 .close-btn::before {
@@ -437,7 +446,7 @@ html.lenis body {
 
 .nav-item {
   font-family: "Cormorant Garamond", serif;
-  font-size: clamp(1.8rem, 4vw, 4rem);
+  font-size: clamp(1.8rem, 5vw, 4rem);
   font-weight: 300;
   color: #2c1810;
   text-decoration: none;
@@ -905,7 +914,7 @@ section.preserved {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  z-index: 1000;
+  z-index: 1;
 }
 .categorias .container a .content span {
   color: #fff;
@@ -1251,7 +1260,7 @@ section.preserved {
   line-height: 1.1;
 }
 .footer .content-contato .email-link {
-  color: rgba(239, 235, 227, 0.5019607843);
+  color: rgba(239, 235, 227, 0.3);
   letter-spacing: -0.02em;
   margin-right: 0;
   padding-top: 6px;
