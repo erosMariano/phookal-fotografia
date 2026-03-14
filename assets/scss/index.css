@@ -655,7 +655,7 @@ section.preserved {
   position: relative;
   z-index: 10;
   margin-bottom: -100px;
-  color: #2C1810;
+  color: #2c1810;
 }
 .depoimentos p {
   font-size: 36px;
@@ -702,7 +702,10 @@ section.preserved {
   display: block;
   height: 158px;
   font-family: "Moaro", sans-serif;
-  color: #6B3A2A;
+  color: #6b3a2a;
+  position: relative;
+  left: -26px;
+  top: -27px;
 }
 .depoimentos h3 {
   font-family: "BerlingskeSerif", sans-serif;
@@ -713,12 +716,12 @@ section.preserved {
   position: relative;
   width: -moz-max-content;
   width: max-content;
-  color: #8F400D;
+  color: #2c1810;
 }
 .depoimentos h3 span {
   font-size: clamp(2.5rem, 6vw, 6.25rem);
   font-family: "Moaro", sans-serif;
-  color: #2C1810;
+  color: #8f400d;
 }
 .depoimentos .content-buttons {
   position: absolute;
@@ -731,7 +734,7 @@ section.preserved {
   padding: 12px 24px;
   font-size: 1rem;
   font-family: "Moaro", sans-serif;
-  background: #6B3A2A;
+  background: #6b3a2a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;
   cursor: pointer;
@@ -739,7 +742,7 @@ section.preserved {
   backdrop-filter: blur(10px);
 }
 .depoimentos .content-buttons button:hover {
-  background: #8F400D;
+  background: #8f400d;
   border-color: rgba(255, 255, 255, 0.5);
   transform: translateY(-2px);
 }
