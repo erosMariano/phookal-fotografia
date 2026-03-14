@@ -1,3 +1,4 @@
+import { initMenu } from "./sections/menu.js";
 import { initPreserved } from "./sections/preserved.js";
 import { initHero } from "./sections/hero.js";
 import { initCategorias } from "./sections/categorias.js";
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Registrar ScrollTrigger
   gsap.registerPlugin(ScrollTrigger);
 
+  initMenu();
   initHero();
   initPreserved();
   initCategorias();

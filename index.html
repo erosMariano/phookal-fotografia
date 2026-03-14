@@ -23,6 +23,7 @@
     />
 
     <link rel="stylesheet" href="./assets/scss/index.css" />
+
   </head>
   <body>
     <section class="loading-screen">
@@ -37,7 +38,82 @@
       </div>
     </section>
 
-    <div class="website-content">
+    <div class="menu-container">
+      <!-- TRIGGER -->
+      <div class="menu-trigger" id="menuTrigger">
+        <span class="menu-label">Menu</span>
+        <div class="hamburger-lines">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <!-- OVERLAY + PANEL -->
+      <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-panel">
+          <div class="close-btn" id="closeBtn"></div>
+
+          <div class="side-images left">
+            <img
+              class="side-img active"
+              id="left-0"
+              src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=440&q=80"
+              alt=""
+            />
+            <img
+              class="side-img"
+              id="left-1"
+              src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=440&q=80"
+              alt=""
+            />
+            <img
+              class="side-img"
+              id="left-2"
+              src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=440&q=80"
+              alt=""
+            />
+          </div>
+
+          <div class="side-images right">
+            <img
+              class="side-img active"
+              id="right-0"
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=440&q=80"
+              alt=""
+            />
+            <img
+              class="side-img"
+              id="right-1"
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=440&q=80"
+              alt=""
+            />
+            <img
+              class="side-img"
+              id="right-2"
+              src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=440&q=80"
+              alt=""
+            />
+          </div>
+
+          <div class="panel-line"></div>
+
+          <nav class="nav-items">
+            <a class="nav-item" data-index="0" href="#"
+              ><span class="idx">01</span>Portfolio</a
+            >
+            <a class="nav-item" data-index="1" href="#"
+              ><span class="idx">02</span>About</a
+            >
+            <a class="nav-item" data-index="2" href="#"
+              ><span class="idx">03</span>Contact</a
+            >
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <section class="website-content">
       <div class="apresentation">
         <span>Carol & Guilherme</span>
         <span>Apresentam</span>
@@ -49,7 +125,7 @@
         Fotografia com aventura e sensibilidade. Fotografamos Casamentos,
         Elopements e ensaios de casais
       </p>
-    </div>
+    </section>
 
     <section class="preserved">
       <div class="container">
@@ -297,13 +373,14 @@
       </div>
     </section>
 
-
     <footer class="footer">
       <div class="container">
         <div class="content-contato">
           <div>
             <h2>Contato</h2>
-            <a href="mailto:phookal.fotografia@gmail.com" class="email-link">phookal@gmail.com</a>
+            <a href="mailto:phookal.fotografia@gmail.com" class="email-link"
+              >phookal@gmail.com</a
+            >
           </div>
 
           <div class="footer-link-content">
@@ -326,7 +403,7 @@
             </nav>
           </div>
         </div>
-        <img src="./assets/img/logo.svg" alt="">
+        <img src="./assets/img/logo.svg" alt="" />
 
         <div class="reserved">
           <p>EnneCode</p>
@@ -334,6 +411,7 @@
         </div>
       </div>
     </footer>
+
     <script src="https://unpkg.com/lenis@1.3.18/dist/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
