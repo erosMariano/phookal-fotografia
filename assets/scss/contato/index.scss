@@ -1,15 +1,13 @@
-@use "./reset";
-@use "./lenis";
-@use "./utils/_menu";
-@use "./home";
-@use "./preserved";
-@use "./categorias";
-@use "./_parallax-section";
-@use "./_depoimentos";
-@use "./_footer";
-@use "./utils/_cursor";
-@use "./utils/_transitions";
+@use "../utils/reset";
+@use "../utils/_lenis";
+@use "../utils/_menu";
+@use "../utils/_transitions";
 
+
+@use "../utils/_cursor";
+@use "../utils/_footer";
+
+ 
 @font-face {
   font-family: "Moaro";
   src: url("../fonts/moaro.otf") format("opentype");
@@ -36,4 +34,3 @@
   font-style: normal;
   font-display: swap;
 }
-

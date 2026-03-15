@@ -1,4 +1,4 @@
-export function initMenu() {
+export function initMenu(delay) {
   const trigger = document.getElementById("menuTrigger");
   const overlay = document.getElementById("menuOverlay");
   const closeBtn = document.getElementById("closeBtn");
@@ -39,7 +39,7 @@ export function initMenu() {
     opacity: 1,
     y: 0,
     duration: 1.2,
-    delay: 3,
+    delay: delay && 3,
     ease: "power3.out",
   })
 
