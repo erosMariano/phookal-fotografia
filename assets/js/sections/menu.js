@@ -35,6 +35,14 @@ export function initMenu() {
     if (e.target === overlay) close();
   });
 
+  gsap.to(trigger, {
+    opacity: 1,
+    y: 0,
+    duration: 1.2,
+    delay: 3,
+    ease: "power3.out",
+  })
+
   // hover em desktop, touch em mobile
   navItems.forEach((item) => {
     item.addEventListener("mouseenter", () => setImages(+item.dataset.index));
