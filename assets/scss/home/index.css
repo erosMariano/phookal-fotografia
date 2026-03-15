@@ -451,12 +451,12 @@ html.lenis body {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, transparent 40%, #8f400d);
+  background: linear-gradient(to right, transparent 0%, rgba(119, 49, 4, 0.6784313725));
   z-index: 1;
 }
 
 .side-images.left::after {
-  background: linear-gradient(to left, transparent 40%, #8f400d);
+  background: linear-gradient(to left, transparent 0%, rgba(119, 49, 4, 0.6784313725));
 }
 
 /* ── NAV ── */
