@@ -798,14 +798,15 @@ body {
   }
 }
 .form-contato {
-  background-image: url("../../img/carol-gui-home.jpg");
+  background-image: url("../../img/bg_contato.webp");
   min-height: 100vh;
   background-attachment: fixed;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: stretch;
+  background-position-x: -26vw;
 }
 .form-contato__inner {
   width: 40vw;
