@@ -133,6 +133,32 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Estilização da scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #efebe3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2d2d2d;
+  border-radius: 5px;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1a1a1a;
+}
+
+/* Para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #8f400d #efebe3;
+}
+
 html.lenis,
 html.lenis body {
   height: auto;
@@ -574,32 +600,6 @@ html {
   height: 100vh;
   overflow: hidden;
   background-color: #efebe3;
-}
-
-/* Estilização da scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #efebe3;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #2d2d2d;
-  border-radius: 5px;
-  -webkit-transition: background 0.3s ease;
-  transition: background 0.3s ease;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #1a1a1a;
-}
-
-/* Para Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #8f400d #efebe3;
 }
 
 .loading-screen {
@@ -1452,21 +1452,21 @@ label:hover {
 
 @font-face {
   font-family: "Moaro";
-  src: url("../fonts/moaro.otf") format("opentype");
+  src: url("../../fonts/moaro.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat Alternates";
-  src: url("../fonts/MontserratAlternates-Regular.ttf") format("opentype");
+  src: url("../../fonts/MontserratAlternates-Regular.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "BerlingskeSerif";
-  src: url("../fonts/BerlingskeSerif-Lt.woff") format("woff");
+  src: url("../../fonts/BerlingskeSerif-Lt.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;

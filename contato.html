@@ -1,49 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contato</title>
-<link rel="stylesheet" href="./assets/scss/contato/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="./assets/scss/contato/index.css" />
 
-<style>
-body {
-  margin: 0;
-  font-family: sans-serif;
-}
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
 
-.transition {
-  position: fixed;
-  inset: 0;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  z-index: 99999;
-  pointer-events: none;
-}
+      .transition {
+        position: fixed;
+        inset: 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        z-index: 99999;
+        pointer-events: none;
+      }
 
-.col {
-  background: #8f400d;
-  height: 100vh;
-  transform: translateY(0);
-}
+      .col {
+        background: #8f400d;
+        height: 100vh;
+        transform: translateY(0);
+      }
 
-.transition img {
-  position: absolute;
-  z-index: 100000;
-  width: 80%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 1; 
-}
-</style>
-</head>
+      .transition img {
+        position: absolute;
+        z-index: 100000;
+        width: 80%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+      }
+    </style>
+  </head>
 
-<body>
-
+  <body>
     <div id="cursor"></div>
     <div id="cursor-ring"></div>
-
 
     <div class="menu-container">
       <!-- TRIGGER -->
@@ -106,10 +104,10 @@ body {
           <div class="panel-line"></div>
 
           <nav class="nav-items">
-            <a class="nav-item" data-index="0" href="#categorias"
+            <a class="nav-item" data-index="0" href="./index.html#categorias"
               ><span class="idx">01</span>Trabalhos</a
             >
-            <a class="nav-item" data-index="1" href="#parallax-section"
+            <a class="nav-item" data-index="1" href="./index.html#parallax-section"
               ><span class="idx">02</span>Sobre Nós</a
             >
             <a class="nav-item page-link" data-index="2" href="./contato.html"
@@ -120,52 +118,195 @@ body {
       </div>
     </div>
 
+    <section class="contact_hero">
+      <div class="container">
+        <div class="content_initial">
+          <p>Queremos a conexão, a emoção, o momento real.</p>
+          <h1>
+            Vamos criar algo <br />
+            inesquecível juntos!
+          </h1>
+          <img
+            class="image-hero-1"
+            src="./assets/img/carol-gui-home.jpg"
+            alt=""
+          />
+          <img
+            class="image-hero-2"
+            src="./assets/img/carol-gui-home.jpg"
+            alt=""
+          />
+          <img
+            class="image-hero-3"
+            src="./assets/img/carol-gui-home.jpg"
+            alt=""
+          />
+          <img
+            class="image-hero-4"
+            src="./assets/img/carol-gui-home.jpg"
+            alt=""
+          />
+          <img
+            class="image-hero-5"
+            src="./assets/img/carol-gui-home.jpg"
+            alt=""
+          />
+        </div>
 
+        <div class="email-me">
+          <div class="links-contact">
+            <p>Envie-nos Email</p>
+            <a href="mailto:phookal@phookal.com">phookal@gmail.com</a>
+          </div>
 
-  <div class="transition">
-    <img src="./assets/img/logo.svg" alt="">
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-    <div class="col"></div>
-  </div>
+          <div class="links-contact">
+            <p>Siga-nos no Instagram</p>
+            <a
+              href="https://www.instagram.com/phookal_fotografia/"
+              target="_blank"
+              >@phookal_fotografia</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <h1>Entrei na página de contato</h1>
+    <section class="form-contato">
+      <div class="form-contato__inner">
+        <p class="eyebrow">Contato</p>
+        <h2 class="form-contato__title">
+          Vamos <em>criar</em><br />algo juntos
+        </h2>
+        <p class="form-contato__subtitle">
+          Preencha o formulário e entrarei em contato em até 48h.
+        </p>
+        <div class="divider"></div>
+        <form action="">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Seu nome completo"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="seu@email.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Conte-me sobre o seu projeto..."
+              required
+            ></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit">Enviar mensagem</button>
+            <span class="form-note">Respondemos em breve</span>
+          </div>
+        </form>
+      </div>
+    </section>
 
+    
+    <div class="transition">
+      <img src="./assets/img/logo.svg" alt="" />
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
 
-  <script src="https://unpkg.com/lenis@1.3.18/dist/lenis.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script type="module" src="./assets/js/contato.js"></script>
-  <script>
-  window.addEventListener("load", () => {
-    const cols = document.querySelectorAll(".col");
-    const logo = document.querySelector(".transition img");
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="content-contato">
+          <div>
+            <h2>Contato</h2>
+            <a href="mailto:phookal.fotografia@gmail.com" class="email-link"
+              >phookal@gmail.com</a
+            >
+          </div>
 
-    const tl = gsap.timeline();
+          <div class="footer-link-content">
+            <nav class="footer-link-column">
+              <span> MENU </span>
+              <ul>
+                <li><a href="">Trabalho</a></li>
+                <li><a href="">Sobre nós</a></li>
+                <li><a class="page-link" href="./contato.html">Contato</a></li>
+              </ul>
+            </nav>
 
-    tl.to(logo, {
-      opacity: 0,
-      duration: 0.3,
-      ease: "power2.in"
-    })
+            <nav class="footer-link-column">
+              <span> Social </span>
+              <ul>
+                <li>
+                  <a href="https://www.instagram.com/phookal_fotografia/"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href="https://br.pinterest.com/phookalfotografia/"
+                    >Pinterest</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <img src="./assets/img/logo.svg" alt="" />
 
-    .to(cols, {
-      y: "-100%",
-      duration: 0.6,
-      stagger: 0.05,
-      ease: "power3.inOut"
-    });
-  });
-  </script>
+        <div class="reserved">
+          <p>EnneCode</p>
+          <p>&copy; 2026 Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
 
-</body>
+    <script src="https://unpkg.com/lenis@1.3.18/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script type="module" src="./assets/js/contato.js"></script>
+    <script>
+      window.addEventListener("load", () => {
+        const cols = document.querySelectorAll(".col");
+        const logo = document.querySelector(".transition img");
+
+        const tl = gsap.timeline();
+
+        tl.to(logo, {
+          opacity: 0,
+          duration: 0.3,
+          ease: "power2.in",
+        })
+
+          .to(cols, {
+            y: "-100%",
+            duration: 0.6,
+            stagger: 0.05,
+            ease: "power3.inOut",
+          });
+      });
+    </script>
+  </body>
 </html>
