@@ -214,7 +214,7 @@ html.lenis body {
   position: fixed;
   top: clamp(16px, 3vw, 28px);
   right: clamp(16px, 3vw, 28px);
-  z-index: 1000;
+  z-index: 100;
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -1372,6 +1372,82 @@ section.preserved {
     padding: 6px 0;
     text-align: left;
   }
+}
+
+*,
+*::before,
+*::after {
+  cursor: none !important;
+}
+
+.menu-trigger *,
+.close-btn * {
+  cursor: none !important;
+}
+
+#cursor {
+  position: fixed;
+  z-index: 9999;
+  width: 8px;
+  height: 8px;
+  background: #b8965a;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+#cursor-ring {
+  position: fixed;
+  z-index: 9998;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(184, 150, 90, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+a,
+button,
+input,
+textarea,
+select,
+label,
+[role=button] {
+  cursor: none !important;
+}
+
+a:hover,
+button:hover,
+input:hover,
+textarea:hover,
+select:hover,
+label:hover {
+  cursor: none !important;
+}
+
+.transition {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  pointer-events: none;
+  z-index: 9999;
+}
+.transition img {
+  position: absolute;
+  z-index: 10000;
+  width: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.col {
+  background: #8f400d;
+  height: 100vh;
+  transform: translateY(100%);
 }
 
 @font-face {

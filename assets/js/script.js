@@ -1,11 +1,12 @@
-import { initMenu } from "./sections/menu.js";
+import { initMenu } from "./sections/utils/menu.js";
 import { initPreserved } from "./sections/preserved.js";
 import { initHero } from "./sections/hero.js";
 import { initCategorias } from "./sections/categorias.js";
 import { initParallaxSection } from "./sections/parallax-section.js";
 import { initDepoiments } from "./sections/depoimentos.js";
 import { initFooter } from "./sections/footer.js";
-
+import { initCursor } from "./sections/utils/cursor.js"
+import { transitionToPage } from "./sections/utils/transitions.js";
 document.addEventListener("DOMContentLoaded", function () {
   const lenis = new Lenis({
     duration: 2, // duração da animação do scroll
@@ -23,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Registrar ScrollTrigger
   gsap.registerPlugin(ScrollTrigger);
-
+  initCursor();
   initMenu();
   initHero();
   initPreserved();
@@ -31,4 +32,5 @@ document.addEventListener("DOMContentLoaded", function () {
   initParallaxSection();
   initDepoiments();
   initFooter();
+  transitionToPage()
 });

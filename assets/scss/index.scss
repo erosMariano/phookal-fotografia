@@ -1,12 +1,14 @@
 @use "./reset";
 @use "./lenis";
-@use "./menu";
+@use "./utils/_menu";
 @use "./home";
 @use "./preserved";
 @use "./categorias";
 @use "./_parallax-section";
 @use "./_depoimentos";
 @use "./_footer";
+@use "./utils/_cursor";
+@use "./utils/_transitions";
 
 @font-face {
   font-family: "Moaro";
@@ -34,3 +36,4 @@
   font-style: normal;
   font-display: swap;
 }
+

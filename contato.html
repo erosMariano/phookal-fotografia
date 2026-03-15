@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contato</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.transition {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  z-index: 99999;
+  pointer-events: none;
+}
+
+.col {
+  background: #8f400d;
+  height: 100vh;
+  transform: translateY(0);
+}
+
+.transition img {
+  position: absolute;
+  z-index: 100000;
+  width: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1; 
+}
+</style>
+</head>
+
+<body>
+
+  <div class="transition">
+    <img src="./assets/img/logo.svg" alt="">
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+  </div>
+
+  <h1>Entrei na página de contato</h1>
+
+  <script>
+  window.addEventListener("load", () => {
+    const cols = document.querySelectorAll(".col");
+    const logo = document.querySelector(".transition img");
+
+    const tl = gsap.timeline();
+
+    tl.to(logo, {
+      opacity: 0,
+      duration: 0.3,
+      ease: "power2.in"
+    })
+
+    .to(cols, {
+      y: "-100%",
+      duration: 0.6,
+      stagger: 0.05,
+      ease: "power3.inOut"
+    });
+  });
+  </script>
+
+</body>
+</html>
