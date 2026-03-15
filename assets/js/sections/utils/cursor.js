@@ -1,6 +1,20 @@
 export function initCursor() {
+  const isTouchDevice =
+    window.matchMedia("(hover: none), (pointer: coarse)").matches ||
+    "ontouchstart" in window ||
+    navigator.maxTouchPoints > 0;
+
   const cursor = document.getElementById('cursor');
   const ring   = document.getElementById('cursor-ring');
+
+  if (!cursor || !ring) return;
+
+  if (isTouchDevice) {
+    cursor.style.display = "none";
+    ring.style.display = "none";
+    return;
+  }
+
   let mx = 0, my = 0, rx = 0, ry = 0;
 
   // Ponto: segue o mouse na hora

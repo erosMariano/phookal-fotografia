@@ -8,6 +8,8 @@ import { initFooter } from "./sections/footer.js";
 import { initCursor } from "./sections/utils/cursor.js"
 import { transitionToPage } from "./sections/utils/transitions.js";
 document.addEventListener("DOMContentLoaded", function () {
+  const hasHashTarget = Boolean(window.location.hash);
+
   const lenis = new Lenis({
     duration: 2, // duração da animação do scroll
     smoothWheel: true, // suaviza scroll do mouse
@@ -26,11 +28,31 @@ document.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
   initCursor();
   initMenu();
-  initHero();
+  if (hasHashTarget) {
+    const loadingScreen = document.querySelector(".loading-screen");
+    if (loadingScreen) loadingScreen.style.display = "none";
+
+    document.body.style.overflow = "unset";
+    document.documentElement.style.overflow = "unset";
+    document.documentElement.style.overflowX = "hidden";
+  } else {
+    initHero();
+  }
   initPreserved();
   initCategorias();
   initParallaxSection();
   initDepoiments();
   initFooter();
-  transitionToPage()
+  transitionToPage();
+
+  if (hasHashTarget) {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        const section = document.querySelector(window.location.hash);
+        if (section) {
+          section.scrollIntoView({ behavior: "auto", block: "start" });
+        }
+      });
+    });
+  }
 });

@@ -42,3 +42,23 @@ select:hover,
 label:hover {
   cursor: none !important;
 }
+
+@media (hover: none), (pointer: coarse) {
+  *,
+  *::before,
+  *::after,
+  a,
+  button,
+  input,
+  textarea,
+  select,
+  label,
+  [role="button"] {
+    cursor: auto !important;
+  }
+
+  #cursor,
+  #cursor-ring {
+    display: none !important;
+  }
+}
