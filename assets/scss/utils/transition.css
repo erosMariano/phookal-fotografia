@@ -1,0 +1,24 @@
+.transition {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  z-index: 99999;
+  pointer-events: none;
+}
+
+.col {
+  background: #8f400d;
+  height: 100vh;
+  transform: translateY(0);
+}
+
+.transition img {
+  position: absolute;
+  z-index: 100000;
+  width: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
