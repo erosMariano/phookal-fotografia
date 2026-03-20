@@ -1,14 +1,14 @@
 import { initMenu } from "../sections/utils/menu.js";
 import { initFooter } from "../sections/footer.js";
 import { transitionToPage } from "../sections/utils/transitions.js";
-import { initCarrossel } from "./carrossel.js";
+import { animateHeroSection, animateCasaisSection, animateCasaisMobile } from "./animations.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   const lenis = new Lenis({
     duration: 2, 
-    smoothWheel: true,
-    smoothTouch: true,
-    lerp: 0.08,
+    smoothWheel: true, 
+    smoothTouch: true, 
+    lerp: 0.08, 
   });
 
   function raf(time) {
@@ -19,8 +19,18 @@ document.addEventListener("DOMContentLoaded", function () {
   requestAnimationFrame(raf);
 
   gsap.registerPlugin(ScrollTrigger);
-  initMenu(0);
+
+  gsap.delayedCall(0.6, () => {
+    animateHeroSection();
+    if (window.innerWidth <= 768) {
+      animateCasaisMobile();
+    } else {
+      animateCasaisSection();
+    }
+    ScrollTrigger.refresh();
+  });
+
+  initMenu();
   initFooter();
-  initCarrossel();
   transitionToPage();
 });

@@ -12,7 +12,6 @@ export function initHero() {
     ease: "power3.inOut",
     delay: 0,
     onComplete: function () {
-      // Ativar scroll após a animação
       document.body.style.overflow = "unset";
       document.documentElement.style.overflow = "unset";
       document.documentElement.style.overflowX = "hidden";

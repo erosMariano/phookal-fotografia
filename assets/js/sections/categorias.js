@@ -6,14 +6,12 @@ export function initCategorias() {
     const border = card.querySelector(".border-card");
     const sides = ["top", "right", "bottom", "left"];
 
-    // Borda de entrada (scroll)
     sides.forEach((side) => {
       const line = document.createElement("span");
       line.classList.add("border-line", `border-line--${side}`);
       card.appendChild(line);
     });
 
-    // Segunda borda (hover)
     sides.forEach((side) => {
       const line = document.createElement("span");
       line.classList.add("border-hover", `border-hover--${side}`);
@@ -22,7 +20,6 @@ export function initCategorias() {
 
     if (border) border.remove();
 
-    // Animação de entrada (scroll)
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: card,
@@ -57,7 +54,6 @@ export function initCategorias() {
         "-=0.25",
       );
 
-    // Animação hover (segunda borda)
     const hoverTl = gsap.timeline({ paused: true });
 
     hoverTl

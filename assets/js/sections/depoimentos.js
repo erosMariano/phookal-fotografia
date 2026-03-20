@@ -96,16 +96,9 @@ export function initDepoiments() {
   const h3 = slide.querySelector("h3");
   const slideIndex = Number.parseInt(slide.dataset.slide);
 
-    // Reset de todos os elementos
-  // if (isTransition) {
-  //   gsap.set([mainFoto, miniPhotos[0], textSpan, textP, h3], {
-  //     clearProps: "all",
-  //   });
-  // }
 
     const tl = gsap.timeline();
 
-    // Main foto com clipPath e scale
     tl.fromTo(
       mainFoto,
       { clipPath: "inset(100% 0% 0% 0%)", scale: 1.08 },
@@ -118,7 +111,6 @@ export function initDepoiments() {
       0,
     );
 
-    // Primeira mini-foto
     tl.fromTo(
       miniPhotos[0],
       { clipPath: "inset(0% 100% 0% 0%)" },
@@ -131,7 +123,6 @@ export function initDepoiments() {
       isMobile ? 0 : 0.1,
     );
 
-    // Span de aspas
     tl.fromTo(
       textSpan,
       { scale: 0.3, opacity: 0, rotation: -15 },
@@ -278,17 +269,15 @@ export function initDepoiments() {
     ease: "power3.out",
   });
 
-  // Animações do primeiro slide ao entrar na viewport
   ScrollTrigger.create({
     trigger: ".depoimentos",
     start: triggerStart,
     once: true,
     onEnter: () => {
-      playEntranceAnimations(slides[0]); // <- isTransition = false (padrão)
+      playEntranceAnimations(slides[0]); 
     },
   });
 
-  // Parallax no desktop
   if (!isMobile) {
     gsap.to(".depoimento-slide.active .main-foto", {
       scrollTrigger: {

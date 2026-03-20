@@ -113,15 +113,15 @@ export function initCarrossel() {
 
   if (wrapper && container && !isMobile) {
     gsap.to(wrapper, {
-      // Move o wrapper para a esquerda
+
       x: () => -(wrapper.scrollWidth - window.innerWidth),
       ease: "none",
       scrollTrigger: {
         trigger: container,
-        pin: true, // Trava o container na tela
-        scrub: 1, // Sincroniza o progresso com o scroll
-        invalidateOnRefresh: true, // Recalcula ao redimensionar
-        // A duração do scroll é proporcional à largura do conteúdo
+        pin: true,
+        scrub: 1, 
+        invalidateOnRefresh: true, 
+
         end: () => "+=" + (wrapper.scrollWidth - window.innerWidth),
       },
     });

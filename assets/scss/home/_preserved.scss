@@ -36,7 +36,7 @@ section.preserved {
       height: clamp(220px, 28vw, 330px);
       object-fit: cover;
       will-change: transform, opacity;
-      clip-path: inset(0% 0% 0% 0%); // estado final explícito
+      clip-path: inset(0% 0% 0% 0%); 
     }
   }
 

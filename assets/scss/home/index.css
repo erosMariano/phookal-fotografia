@@ -159,6 +159,27 @@ html {
   scrollbar-color: #8f400d #efebe3;
 }
 
+@font-face {
+  font-family: "Moaro";
+  src: url("../../fonts/moaro.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("../../fonts/MontserratAlternates-Regular.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "BerlingskeSerif";
+  src: url("../../fonts/BerlingskeSerif-Lt.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 html.lenis,
 html.lenis body {
   height: auto;
@@ -475,7 +496,7 @@ html.lenis body {
   font-family: "Cormorant Garamond", serif;
   font-size: clamp(1.8rem, 5vw, 4rem);
   font-weight: 300;
-  color: #2c1810;
+  color: #434343;
   text-decoration: none;
   letter-spacing: 0.08em;
   position: relative;
@@ -1065,7 +1086,7 @@ section.preserved {
   position: relative;
   z-index: 10;
   margin-bottom: -100px;
-  color: #2c1810;
+  color: #434343;
 }
 .depoimentos p {
   font-size: 36px;
@@ -1126,7 +1147,7 @@ section.preserved {
   position: relative;
   width: -moz-max-content;
   width: max-content;
-  color: #2c1810;
+  color: #434343;
 }
 .depoimentos h3 span {
   font-size: clamp(2.5rem, 6vw, 6.25rem);
@@ -1353,6 +1374,10 @@ section.preserved {
   }
 }
 @media (max-width: 600px) {
+  .footer .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .footer .footer-link-content {
     flex-direction: column;
     margin-bottom: 2.5rem;
@@ -1374,76 +1399,6 @@ section.preserved {
   }
 }
 
-*,
-*::before,
-*::after {
-  cursor: none !important;
-}
-
-.menu-trigger *,
-.close-btn * {
-  cursor: none !important;
-}
-
-#cursor {
-  position: fixed;
-  z-index: 9999;
-  width: 8px;
-  height: 8px;
-  background: #b8965a;
-  border-radius: 50%;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-}
-
-#cursor-ring {
-  position: fixed;
-  z-index: 9998;
-  width: 32px;
-  height: 32px;
-  border: 1px solid rgba(184, 150, 90, 0.5);
-  border-radius: 50%;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-}
-
-a,
-button,
-input,
-textarea,
-select,
-label,
-[role=button] {
-  cursor: none !important;
-}
-
-a:hover,
-button:hover,
-input:hover,
-textarea:hover,
-select:hover,
-label:hover {
-  cursor: none !important;
-}
-
-@media (hover: none), (pointer: coarse) {
-  *,
-  *::before,
-  *::after,
-  a,
-  button,
-  input,
-  textarea,
-  select,
-  label,
-  [role=button] {
-    cursor: auto !important;
-  }
-  #cursor,
-  #cursor-ring {
-    display: none !important;
-  }
-}
 .transition {
   position: fixed;
   inset: 0;
@@ -1466,26 +1421,4 @@ label:hover {
   background: #8f400d;
   height: 100vh;
   transform: translateY(100%);
-}
-
-@font-face {
-  font-family: "Moaro";
-  src: url("../../fonts/moaro.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Montserrat Alternates";
-  src: url("../../fonts/MontserratAlternates-Regular.ttf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "BerlingskeSerif";
-  src: url("../../fonts/BerlingskeSerif-Lt.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
 }/*# sourceMappingURL=index.css.map */

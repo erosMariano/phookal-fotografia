@@ -7,7 +7,6 @@ export function initMenu(delay) {
 
   function setImages(idx) {
     if (idx === current) return;
-    // verifica se imagens estão visíveis (desktop/tablet)
     const leftEl = document.getElementById(`left-${current}`);
     if (!leftEl) return;
     ["left", "right"].forEach((side) => {
@@ -43,7 +42,6 @@ export function initMenu(delay) {
     ease: "power3.out",
   })
 
-  // hover em desktop, touch em mobile
   navItems.forEach((item) => {
     item.addEventListener("mouseenter", () => setImages(+item.dataset.index));
     item.addEventListener("touchstart", () => setImages(+item.dataset.index), {

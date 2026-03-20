@@ -1,7 +1,6 @@
 export function initPreserved() {
   const isMobile = window.innerWidth <= 768;
 
-  // H2
   gsap.from(".preserved h2", {
     scrollTrigger: {
       trigger: ".preserved h2",
@@ -13,7 +12,6 @@ export function initPreserved() {
     ease: "power3.out",
   });
 
-  // Foto esquerda (preserved_3)
   gsap.from(".content-left img", {
     scrollTrigger: {
       trigger: ".content-left img",
@@ -25,7 +23,6 @@ export function initPreserved() {
     delay: isMobile ? 0 : 0.2,
   });
 
-  // Parágrafos
   gsap.from(".content-left > div p", {
     scrollTrigger: {
       trigger: ".content-left > div",
@@ -39,7 +36,6 @@ export function initPreserved() {
     delay: isMobile ? 0 : 0.4,
   });
 
-  // Foto superior direita (preserved_2)
   gsap.from(".container-right > div img", {
     scrollTrigger: {
       trigger: ".container-right > div img",
@@ -51,7 +47,6 @@ export function initPreserved() {
     delay: isMobile ? 0 : 0.3,
   });
 
-  // Texto direita
   gsap.from(".container-right > div p", {
     scrollTrigger: {
       trigger: ".container-right > div p",
@@ -64,7 +59,6 @@ export function initPreserved() {
     delay: isMobile ? 0 : 0.6,
   });
 
-  // Foto grande direita (preserved_1)
   gsap.from(".container-right > img", {
     scrollTrigger: {
       trigger: ".container-right > img",

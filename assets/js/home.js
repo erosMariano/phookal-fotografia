@@ -5,16 +5,15 @@ import { initCategorias } from "./sections/categorias.js";
 import { initParallaxSection } from "./sections/parallax-section.js";
 import { initDepoiments } from "./sections/depoimentos.js";
 import { initFooter } from "./sections/footer.js";
-import { initCursor } from "./sections/utils/cursor.js"
 import { transitionToPage } from "./sections/utils/transitions.js";
 document.addEventListener("DOMContentLoaded", function () {
   const hasHashTarget = Boolean(window.location.hash);
 
   const lenis = new Lenis({
-    duration: 2, // duração da animação do scroll
-    smoothWheel: true, // suaviza scroll do mouse
-    smoothTouch: true, // suaviza scroll no touch
-    lerp: 0.08, // quanto menor, mais suave
+    duration: 2, 
+    smoothWheel: true, 
+    smoothTouch: true,
+    lerp: 0.08,
   });
 
   function raf(time) {
@@ -24,9 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   requestAnimationFrame(raf);
 
-  // Registrar ScrollTrigger
   gsap.registerPlugin(ScrollTrigger);
-  initCursor();
   initMenu();
   if (hasHashTarget) {
     const loadingScreen = document.querySelector(".loading-screen");

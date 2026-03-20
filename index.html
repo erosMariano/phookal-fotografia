@@ -21,14 +21,10 @@
       type="font/otf"
       crossorigin
     />
-    <link rel="stylesheet" href="./assets/scss/utils/index.css">
+    <link rel="stylesheet" href="./assets/scss/utils/index.css" />
     <link rel="stylesheet" href="./assets/scss/home/index.css" />
-    
   </head>
   <body>
-    <div id="cursor"></div>
-    <div id="cursor-ring"></div>
-  
     <div class="menu-container">
       <!-- TRIGGER -->
       <div class="menu-trigger" id="menuTrigger">
@@ -90,14 +86,17 @@
           <div class="panel-line"></div>
 
           <nav class="nav-items">
-            <a class="nav-item" data-index="0" href="#categorias"
-              ><span class="idx">01</span>Trabalhos</a
+            <a class="nav-item" data-index="0" href="/"
+              ><span class="idx">01</span>Home</a
+            >
+            <a class="nav-item" data-index="0" href="/casamentos/"
+              ><span class="idx">02</span>Trabalhos</a
             >
             <a class="nav-item" data-index="1" href="#parallax-section"
-              ><span class="idx">02</span>Sobre Nós</a
+              ><span class="idx">03</span>Sobre Nós</a
             >
-            <a class="nav-item page-link" data-index="2" href="./contato.html"
-              ><span class="idx">03</span>Contato</a
+            <a class="nav-item page-link" data-index="2" href="/contato/"
+              ><span class="idx">04</span>Contato</a
             >
           </nav>
         </div>
@@ -177,7 +176,7 @@
 
     <section class="categorias" id="categorias">
       <div class="container">
-        <a href="#">
+        <a href="./casamentos/">
           <img src="./assets/img/casamento.jpeg" data-parallax="medium" />
           <span class="border-card"></span>
           <div class="content">
@@ -374,7 +373,7 @@
           </div>
         </div>
 
-                <!-- Ensaios -->
+        <!-- Ensaios -->
         <div class="content depoimento-slide" data-slide="3">
           <div class="content-fotos">
             <div class="content-mini-fotos">
@@ -419,8 +418,6 @@
             <button class="btn-proximo">Próximo</button>
           </div>
         </div>
-
-
       </div>
     </section>
 
@@ -438,17 +435,26 @@
             <nav class="footer-link-column">
               <span> MENU </span>
               <ul>
-                <li><a href="">Trabalho</a></li>
-                <li><a href="">Sobre nós</a></li>
-                <li><a class="page-link" href="./contato.html">Contato</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/casamentos/">Trabalho</a></li>
+                <li><a href="/sobre-nos/">Sobre nós</a></li>
+                <li><a class="page-link" href="/contato/">Contato</a></li>
               </ul>
             </nav>
 
             <nav class="footer-link-column">
               <span> Social </span>
               <ul>
-                <li><a href="https://www.instagram.com/phookal_fotografia/">Instagram</a></li>
-                <li><a href="https://br.pinterest.com/phookalfotografia/">Pinterest</a></li>
+                <li>
+                  <a href="https://www.instagram.com/phookal_fotografia/"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a href="https://br.pinterest.com/phookalfotografia/"
+                    >Pinterest</a
+                  >
+                </li>
               </ul>
             </nav>
           </div>
@@ -462,7 +468,7 @@
       </div>
     </footer>
     <div class="transition">
-      <img src="./assets/img/logo.svg" alt="">
+      <img src="./assets/img/logo.svg" alt="" />
       <div class="col"></div>
       <div class="col"></div>
       <div class="col"></div>

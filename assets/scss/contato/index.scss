@@ -5,36 +5,8 @@
 @use "./_hero";
 @use "./_form";
 
-@use "../utils/_cursor";
 @use "../utils/_footer";
 
 .container {
   padding: clamp(3rem, 7vw, 7rem) clamp(1rem, 3vw, 1.5rem);
-}
-
-@font-face {
-  font-family: "Moaro";
-  src: url("../../fonts/moaro.otf") format("opentype");
-
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat Alternates";
-  src: url("../../fonts/MontserratAlternates-Regular.ttf") format("opentype");
-
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "BerlingskeSerif";
-  src: url("../../fonts/BerlingskeSerif-Lt.woff") format("woff");
-
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
 }

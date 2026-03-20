@@ -3,32 +3,5 @@
 @use "../utils/_menu";
 @use "../utils/_transitions";
 
-@use "../utils/_cursor";
 @use "../utils/_footer";
 
-@font-face {
-  font-family: "Moaro";
-  src: url("../../fonts/moaro.otf") format("opentype");
-
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat Alternates";
-  src: url("../../fonts/MontserratAlternates-Regular.ttf") format("opentype");
-
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "BerlingskeSerif";
-  src: url("../../fonts/BerlingskeSerif-Lt.woff") format("woff");
-
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
