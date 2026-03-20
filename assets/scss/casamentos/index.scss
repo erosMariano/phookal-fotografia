@@ -99,7 +99,7 @@ body {
         transparent 70%
       );
 
-      transform: skewX(-20deg); 
+      transform: skewX(-20deg);
       opacity: 0;
     }
 
@@ -411,7 +411,7 @@ body {
     }
 
     .casal-2 {
-      margin: 4rem 0 0;
+      margin: 4rem 0;
 
       .content-1 {
         text-align: left;
@@ -554,6 +554,7 @@ body {
   .card-main img {
     height: 56vw;
     max-height: 320px;
+    object-position: 50% -90px;
   }
   .card-small img {
     height: 36vw;
