@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casamento - Nathália & Renan</title>
+    <link rel="stylesheet" href="../../assets/scss/utils/index.css" />
+    <link rel="stylesheet" href="../../assets/scss/utils/transition.css" />
+
+    <link
+      rel="stylesheet"
+      href="../../assets/scss/casamentos/casal/index.css"
+    />
+  </head>
+
+  <body>
+    <div class="menu-container">
+      <!-- TRIGGER -->
+      <div class="menu-trigger" id="menuTrigger">
+        <span class="menu-label">Menu</span>
+        <div class="hamburger-lines">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <!-- OVERLAY + PANEL -->
+      <div class="menu-overlay" id="menuOverlay">
+        <div class="menu-panel">
+          <div class="close-btn" id="closeBtn"></div>
+
+          <div class="side-images left">
+            <img
+              class="side-img active"
+              id="left-0"
+              src="../../assets/img/trabalho_1.webp"
+              alt=""
+            />
+            <img
+              class="side-img"
+              id="left-3"
+              src="../../assets/img/sobre_nos_1.webp"
+              alt=""
+            />
+            <img
+              class="side-img"
+              id="left-2"
+              src="../../assets/img/contato_1.jpg"
+              alt=""
+            />
+
+            <img
+              class="side-img"
+              id="left-1"
+              src="../../assets/img/imagem-3.webp"
+              alt=""
+            />
+          </div>
+
+          <div class="side-images right">
+            <img
+              class="side-img active"
+              id="right-0"
+              src="../../assets/img/trabalhos_2.webp"
+              alt=""
+            />
+            <img
+              class="side-img"
+              id="right-3"
+              src="../../assets/img/sobre_nos_2.webp"
+              alt=""
+            />
+            <img
+              class="side-img"
+              id="right-2"
+              src="../../assets/img/contato_2.jpg"
+              alt=""
+            />
+
+            <img
+              class="side-img"
+              id="right-1"
+              src="../../assets/img/imagem-4.webp"
+              alt=""
+            />
+          </div>
+
+          <div class="panel-line"></div>
+
+          <nav class="nav-items">
+            <a class="nav-item page-link" data-index="0" href="/"
+              ><span class="idx">01</span>Home</a
+            >
+
+            <a class="nav-item page-link" data-index="1" href="/casamentos/"
+              ><span class="idx">02</span>Trabalhos</a
+            >
+            <a
+              class="nav-item page-link"
+              data-index="2"
+              href="/#parallax-section"
+              ><span class="idx">03</span>Sobre Nós</a
+            >
+            <a class="nav-item page-link" data-index="3" href="/contato/"
+              ><span class="idx">04</span>Contato</a
+            >
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="carrossel-container">
+      <div class="scroll-wrapper">
+        <div class="item item-1">
+          <div class="content">
+            <div class="left-wrap">
+              <h2>Casamento</h2>
+              <h1>Nathália & Renan</h1>
+              <p>
+                O ensaio de casamento de Nathália & Renan foi pura elegância e
+                emoção. Um dia especial marcado por olhares apaixonados,
+                detalhes delicados e uma atmosfera inesquecível celebrando o
+                amor dos dois.
+              </p>
+            </div>
+
+            <div class="right-wrap">
+              <img
+                src="https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/b739bd0b92004a73ab503c31c3135281.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="transition">
+      <img src="../../assets/img/logo.svg" alt="" />
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+      <div class="col"></div>
+    </div>
+
+    <script src="https://unpkg.com/lenis@1.3.18/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script type="module" src="../../assets/js/casamentos/casal.js"></script>
+    <script>
+      window.addEventListener("load", () => {
+        const cols = document.querySelectorAll(".col");
+        const logo = document.querySelector(".transition img");
+
+        const tl = gsap.timeline();
+
+        tl.to(logo, {
+          opacity: 0,
+          duration: 0.3,
+          ease: "power2.in",
+        })
+
+          .to(cols, {
+            y: "-100%",
+            duration: 0.6,
+            stagger: 0.05,
+            ease: "power3.inOut",
+          });
+      });
+    </script>
+    <script
+      type="module"
+      src="../../assets/js/ensaios/nathaliaRenan.js"
+    ></script>
+  </body>
+</html>
