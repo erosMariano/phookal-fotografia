@@ -296,12 +296,47 @@ export const isabelaMatheus = [
   "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/b083e2961a1b4ec29067906871ff7151.jpg",
 ];
 
-// const array = []
-// document.querySelectorAll(".isabela img").forEach((img) => {
-
-//   if(!array.includes(img.src)) {
-//     array.push(img.src)
-//   }
-// })
-// console.log(array)
+export const carolEJoao = [
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/4b77d0830c1a445eaee5b6c1f27343a2.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/8fedfaf4d14244528d651283633f2b41.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/a45b4bbb4a884eebbd88070195245e0a.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/98f971eff4774c42b068920de436ef35.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/5dacfbb89b03486ab943213d51a91496.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/eca14de4d6f74ae985a87e071db8d253.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/9434e7bafe7941528a0590c61219a7e8.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/3096187a31b44755ac298cf3df10af5c.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/95b800cccea0469f9ab9ee231e186606.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/a9724ec4732b4b4585213e53b9c89a11.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/c7a524e7bf5449019f72e94c258fe9c9.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/26a2ffbbd32f489b97897eb3c18bb6d8.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/9f35f4073e734bdd81cf12876ddebfc3.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/56775a0a50b6450a882a3dfdf70e9da6.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/05ccfff4b59f4436806298e9b1d097a9.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/61ec231a118248ed85c532dfcb25b27e.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/5fc505513f764393bc517cc25661bd75.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/c1429db01c0e44008bdf8d74cc5d54b1.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/d155c19cf50d49f7a2199d6e72c0954c.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/c2f56f50a9404ee0a6e17c182fd415e9.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/9f99c9de44b54e7397173a5c3fb38fc1.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/c1a044e96d9c402da2c07539d868c1ea.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/648f822c3ce241069980dd98a5229314.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/b85c109cb71544ecbe1156006c51549f.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/4c7fe5859a1140859e3d69fea3d536f5.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/5734541673ca4367bcbd0a9346e95063.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/720e135dd4ff478088d4522e0edac729.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/b180d8f53bd74b2fb63822765974fb34.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/7eca83405083408989035ecbf895eb2e.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/b7609a30c9ad4c3089de28ad23eaf1bf.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/1c4928b999114748bf271928aa80a929.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/0a8308f6b06f41c6b2fb5f5beee88c78.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/0ad8ab7e25694fa9bd9b17d3b0fdd3ff.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/1a008d97fa4f465b983e40a0cc3e4125.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/810b17998e384b1f9ce178206c7fcd57.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/a43618b95b804808b9067835c0c17149.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/65e5046b9a23419b9abf59845ef3df57.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/ddeff75ff5854455835e8e81a2b0b9e0.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/acfeea25fa46463a8ed96cca3273b26d.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/23f1d497512a4156a85812cd06a48223.jpg",
+    "https://yata-apix-3e8b7d56-03a2-4112-a949-a2cb92229b54.s3-object.locaweb.com.br/1104d9b0e8b941fcb07bf5469ac9f31a.jpg"
+]
 
