@@ -1,0 +1,16 @@
+{
+  "name": "Phookal Fotografia",
+  "short_name": "Phookal",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#8f400d",
+  "icons": [
+    {
+      "src": "./img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
